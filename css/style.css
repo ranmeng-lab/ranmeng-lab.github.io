@@ -867,9 +867,9 @@ ul { list-style: none; }
 .badge-pnas,
 .badge-science,
 .badge-nature,
+.badge-natcomm,
 .badge-cell    { background: var(--teal); }
 /* Other journals → dark gray */
-.badge-natcomm,
 .badge-plos,
 .badge-bioprot { background: var(--gray-700); }
 .badge-review  { background: var(--gray-400); }
@@ -899,7 +899,8 @@ ul { list-style: none; }
     flex-wrap: wrap;
 }
 
-.co-first-label {
+.co-first-label,
+.first-author-label {
     background: rgba(125,58,165,.1);
     color: var(--teal);
     font-size: 0.7rem;
@@ -907,6 +908,10 @@ ul { list-style: none; }
     padding: 2px 8px;
     border-radius: 50px;
     letter-spacing: 0.5px;
+}
+.first-author-label {
+    background: var(--teal);
+    color: var(--white);
 }
 
 .pub-doi {
