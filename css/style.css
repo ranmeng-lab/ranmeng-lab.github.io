@@ -867,9 +867,9 @@ ul { list-style: none; }
 .badge-pnas,
 .badge-science,
 .badge-nature,
-.badge-natcomm,
 .badge-cell    { background: var(--teal); }
 /* Other journals → dark gray */
+.badge-natcomm,
 .badge-plos,
 .badge-bioprot { background: var(--gray-700); }
 .badge-review  { background: var(--gray-400); }
