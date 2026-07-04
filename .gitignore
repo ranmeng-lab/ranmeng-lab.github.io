@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Claude Code conversation memory (never commit)
+.claude/
+
+# Editor / language history
+.Rhistory
+*.swp
+*~
+.idea/
+.vscode/
+
+# Node (in case any tooling gets added later)
+node_modules/
