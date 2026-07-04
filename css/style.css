@@ -293,6 +293,34 @@ ul { list-style: none; }
     pointer-events: none;
 }
 
+/* Hero background icons — Font Awesome fa-dna (left, tilted) + fa-brain (right) */
+.hero-art {
+    position: absolute;
+    top: 50%;
+    pointer-events: none;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.09);
+    line-height: 1;
+}
+/* DNA — LEFT side, tilted */
+.hero-art-dna {
+    left: 6%;
+    font-size: clamp(300px, 45vw, 620px);
+    transform: translateY(-50%) rotate(-22deg);
+    transform-origin: center;
+    color: rgba(255, 255, 255, 0.08);
+}
+/* Brain — RIGHT side, upright */
+.hero-art-brain {
+    right: 6%;
+    font-size: clamp(280px, 42vw, 580px);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.09);
+}
+@media (max-width: 900px) {
+    .hero-art-brain, .hero-art-dna { display: none; }
+}
+
 .hero-tagline {
     font-size: clamp(1rem, 2.5vw, 1.2rem);
     color: rgba(255,255,255,.68);
@@ -908,10 +936,6 @@ ul { list-style: none; }
     padding: 2px 8px;
     border-radius: 50px;
     letter-spacing: 0.5px;
-}
-.first-author-label {
-    background: var(--teal);
-    color: var(--white);
 }
 
 .pub-doi {
